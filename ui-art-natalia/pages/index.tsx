@@ -1,7 +1,8 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.scss'
+import { DynamicButton } from "@molitio/ui-core";
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
   return (
@@ -13,15 +14,16 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-      <h3>main content</h3>
+        <h3>main content</h3>
+
+        <DynamicButton styleVariant="btn-rounded" label="test button"/>
       </main>
 
       <footer className={styles.footer}>
-
-     <span>footer text</span>
+        <span>footer text</span>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
