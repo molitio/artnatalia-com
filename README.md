@@ -1,2 +1,2 @@
-# painting-gallery
-showcase paintings
+# AN Gallery
+a showcase of paintings
