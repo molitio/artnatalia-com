@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run install-local-packages && next dev",
+    "install-local-packages": "rm -rf node_modules/@molitio/ui-core && rm -rf .next/cache && npm i ../../molitio-core/ui-core/.artifact/molitio-ui-core-0.12.3-alpha.0.tgz",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@molitio/ui-core": "0.12.2-alpha.0",
+    "@molitio/ui-core": "0.12.3-alpha.0",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0"
