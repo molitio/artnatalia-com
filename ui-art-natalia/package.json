@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "local-dev": "next dev && rm -rf node_modules/@molitio/ui-core && rm -rf .next/cache && npm i ../../molitio-core/ui-core/.artifact/molitio-ui-core-0.12.2-alpha.0.tgz",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "predev": "rm -rf node_modules/@molitio/ui-core && rm -rf .next/cache && npm i ../../molitio-core/ui-core/.artifact/molitio-ui-core-0.12.2-alpha.0.tgz"
+    "lint": "next lint"
   },
   "dependencies": {
     "@molitio/ui-core": "0.12.2-alpha.0",
